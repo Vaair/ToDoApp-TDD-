@@ -28,7 +28,7 @@ class TaskTests: XCTestCase {
         XCTAssertEqual(task.title, "Foo")
     }
     
-    func testWhenGivenTitleSetsDescription() {
+    func testWhenGivenDescriptionSetsDescription() {
         let task = Task(title: "Foo", description: "Bar")
         
         XCTAssertEqual(task.description, "Bar")
@@ -39,6 +39,15 @@ class TaskTests: XCTestCase {
         let task = Task(title: "Foo")
         
         XCTAssertNotNil(task.date)
+    }
+    
+    func testWhenGivenLocationSetsLocation() {
+        let location = Location(name: "Foo")
         
+        let task = Task(title: "Bar",
+                        description: "Baz",
+                        location: location)
+        
+        XCTAssertEqual(location, task.location)
     }
 }

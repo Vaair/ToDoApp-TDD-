@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A207740258B5DFD002E7095 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20773F258B5DFD002E7095 /* TaskTests.swift */; };
 		3A207746258B5FB7002E7095 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A207745258B5FB7002E7095 /* Task.swift */; };
+		3A20774B258B6B07002E7095 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20774A258B6B07002E7095 /* Location.swift */; };
+		3A207750258B6D8A002E7095 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20774F258B6D8A002E7095 /* LocationTests.swift */; };
 		3AD97897258A0BD900F48C71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD97896258A0BD900F48C71 /* AppDelegate.swift */; };
 		3AD97899258A0BD900F48C71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD97898258A0BD900F48C71 /* SceneDelegate.swift */; };
 		3AD9789B258A0BD900F48C71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9789A258A0BD900F48C71 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		3A20773F258B5DFD002E7095 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		3A207745258B5FB7002E7095 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3A20774A258B6B07002E7095 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3A20774F258B6D8A002E7095 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		3AD97893258A0BD900F48C71 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD97896258A0BD900F48C71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD97898258A0BD900F48C71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3A20773F258B5DFD002E7095 /* TaskTests.swift */,
+				3A20774F258B6D8A002E7095 /* LocationTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				3A207745258B5FB7002E7095 /* Task.swift */,
+				3A20774A258B6B07002E7095 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			files = (
 				3A207746258B5FB7002E7095 /* Task.swift in Sources */,
 				3AD9789B258A0BD900F48C71 /* ViewController.swift in Sources */,
+				3A20774B258B6B07002E7095 /* Location.swift in Sources */,
 				3AD97897258A0BD900F48C71 /* AppDelegate.swift in Sources */,
 				3AD97899258A0BD900F48C71 /* SceneDelegate.swift in Sources */,
 			);
@@ -316,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A207740258B5DFD002E7095 /* TaskTests.swift in Sources */,
+				3A207750258B6D8A002E7095 /* LocationTests.swift in Sources */,
 				3AD978B2258A0BFA00F48C71 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
