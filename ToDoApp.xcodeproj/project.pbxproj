@@ -13,6 +13,8 @@
 		3A207750258B6D8A002E7095 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20774F258B6D8A002E7095 /* LocationTests.swift */; };
 		3A207756258B97F2002E7095 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A207755258B97F2002E7095 /* TaskManagerTests.swift */; };
 		3A20775F258B98F1002E7095 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20775E258B98F1002E7095 /* TaskManager.swift */; };
+		3A74008C25933E9100129E8D /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74008B25933E9100129E8D /* DetailViewControllerTests.swift */; };
+		3A74009125933F8700129E8D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A74009025933F8700129E8D /* DetailViewController.swift */; };
 		3A77265A2591F35300F1C153 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7726592591F35300F1C153 /* TaskCellTests.swift */; };
 		3A7BE550258CAAC6004848A9 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BE54F258CAAC6004848A9 /* TaskListViewControllerTests.swift */; };
 		3A7BE55B258CB778004848A9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7BE55A258CB778004848A9 /* DataProvider.swift */; };
@@ -52,6 +54,8 @@
 		3A20774F258B6D8A002E7095 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		3A207755258B97F2002E7095 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
 		3A20775E258B98F1002E7095 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		3A74008B25933E9100129E8D /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		3A74009025933F8700129E8D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3A7726592591F35300F1C153 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		3A7BE54F258CAAC6004848A9 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		3A7BE55A258CB778004848A9 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			children = (
 				3A7BE54F258CAAC6004848A9 /* TaskListViewControllerTests.swift */,
 				3A7BE55F258CBB9A004848A9 /* DataProviderTests.swift */,
+				3A74008B25933E9100129E8D /* DetailViewControllerTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			children = (
 				3AD9789A258A0BD900F48C71 /* TaskListViewController.swift */,
 				3A7BE55A258CB778004848A9 /* DataProvider.swift */,
+				3A74009025933F8700129E8D /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A74009125933F8700129E8D /* DetailViewController.swift in Sources */,
 				3A20775F258B98F1002E7095 /* TaskManager.swift in Sources */,
 				3A207746258B5FB7002E7095 /* Task.swift in Sources */,
 				3AD9789B258A0BD900F48C71 /* TaskListViewController.swift in Sources */,
@@ -385,6 +392,7 @@
 				3A207756258B97F2002E7095 /* TaskManagerTests.swift in Sources */,
 				3A7BE550258CAAC6004848A9 /* TaskListViewControllerTests.swift in Sources */,
 				3AD978B2258A0BFA00F48C71 /* ToDoAppTests.swift in Sources */,
+				3A74008C25933E9100129E8D /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

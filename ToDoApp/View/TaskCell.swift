@@ -27,10 +27,10 @@ class TaskCell: UITableViewCell {
             dateLabel = nil
             locationLabel = nil
         } else {
-            if let date = task.date {
-                let dateString = dateFotmatter.string(from: date)
-                dateLabel.text = dateString
-            }
+            
+            let dateString = dateFotmatter.string(from: task.date)
+            dateLabel.text = dateString
+            
             self.titleLabel.text = task.title
             self.locationLabel.text = task.location?.name
             
