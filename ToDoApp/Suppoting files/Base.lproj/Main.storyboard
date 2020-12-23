@@ -177,9 +177,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyQ-2d-1ei">
-                                <rect key="frame" x="269" y="446" width="34" height="30"/>
+                                <rect key="frame" x="270" y="446" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="save" destination="W1P-yW-iMR" eventType="touchUpInside" id="vKO-aO-BFu"/>
+                                    <action selector="save:" destination="W1P-yW-iMR" eventType="touchUpInside" id="nve-He-bSj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-WN-tCl">
                                 <rect key="frame" x="86" y="446" width="48" height="30"/>
@@ -191,12 +195,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="adressTextField" destination="1Ux-q8-h1u" id="fk8-gu-Ezw"/>
+                        <outlet property="addressTextField" destination="1Ux-q8-h1u" id="fk8-gu-Ezw"/>
                         <outlet property="cancelButton" destination="ksn-WN-tCl" id="lYZ-wY-sme"/>
                         <outlet property="dateTextField" destination="JaH-GG-LCa" id="c1d-GY-9By"/>
                         <outlet property="descriptionTextField" destination="X7b-ra-dWm" id="ZhL-1f-ikg"/>
                         <outlet property="locationTextField" destination="FvZ-g9-a9j" id="i8V-67-Nfs"/>
-                        <outlet property="saveButton" destination="QyQ-2d-1ei" id="kfq-78-0cE"/>
+                        <outlet property="saveButton" destination="QyQ-2d-1ei" id="Wzr-3g-HSN"/>
                         <outlet property="titleTextField" destination="T4B-LR-aqR" id="ks2-Js-43d"/>
                     </connections>
                 </viewController>
