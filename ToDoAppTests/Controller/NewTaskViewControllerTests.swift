@@ -98,6 +98,26 @@ class NewTaskViewControllerTests: XCTestCase {
         XCTAssertTrue(actions.contains("save"))
     }
     
+    func testGeocoderFetchesCorrectCoordinate() {
+        let geocoderAnswer = expectation(description: "Geocoder answer") //чтобы completion успел выполниться
+        let addressString = "San Francisco"
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(addressString) { (placemarks, error) in
+            let placemark = placemarks?.first
+            let location = placemark?.location
+            
+            guard let latitude = location?.coordinate.latitude,
+                  let longitude = location?.coordinate.longitude else { XCTFail()
+                return
+            }
+            
+            XCTAssertEqual(latitude, 37.779379)
+            XCTAssertEqual(longitude, -122.418433)
+            geocoderAnswer.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
 }
 
 //чтобы не нужен был интернет при создании геокодера
