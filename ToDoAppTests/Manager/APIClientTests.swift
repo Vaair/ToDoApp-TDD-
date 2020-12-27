@@ -63,12 +63,61 @@ class APIClientTests: XCTestCase {
         let tokenExpectation = expectation(description: "Token expectation")
         
         var caughtToken: String?
-        sut.login(withName: "login", password: "password") { (token, _) in
+        sut.login(withName: "login", password: "password") { token, _ in
             caughtToken = token
             tokenExpectation.fulfill()
         }
         waitForExpectations(timeout: 1) { _ in
             XCTAssertEqual(caughtToken, "tokenString")
+        }
+    }
+    
+    func testLoginInvalidJSONReturnsError() {
+        
+        mockURLSession = MockURLSession(data: Data(), urlResponse: nil, responseError: nil)
+        sut.urlSession = mockURLSession
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { _, error in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertNotNil(caughtError)
+        }
+    }
+    
+    func testLoginWhenDataIsNilReturnsError() {
+        
+        mockURLSession = MockURLSession(data: nil, urlResponse: nil, responseError: nil)
+        sut.urlSession = mockURLSession
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { _, error in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertNotNil(caughtError)
+        }
+    }
+    
+    func testLoginWhenResponseErrorReturnsError() {
+        let jsonDataStub = "{\"token\": \"tokenString\"}".data(using: .utf8)
+        let error = NSError(domain: "Server error", code: 404, userInfo: nil)
+        mockURLSession = MockURLSession(data: jsonDataStub, urlResponse: nil, responseError: error)
+        sut.urlSession = mockURLSession
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { _, error in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertNotNil(caughtError)
         }
     }
 }
