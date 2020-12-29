@@ -166,6 +166,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		3A8C0D5B259B29CD003A5F9E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD978B1258A0BFA00F48C71 /* ToDoAppTests.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		3AD9788A258A0BD800F48C71 = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +213,7 @@
 				3A7726582591F32F00F1C153 /* View */,
 				3A7BE54E258CAA50004848A9 /* Controller */,
 				3A207754258B97C8002E7095 /* Manager */,
-				3AD978B1258A0BFA00F48C71 /* ToDoAppTests.swift */,
+				3A8C0D5B259B29CD003A5F9E /* Supporting files */,
 				3AD978B3258A0BFA00F48C71 /* Info.plist */,
 				3A207744258B5E11002E7095 /* Model */,
 			);
